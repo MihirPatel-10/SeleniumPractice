@@ -8,11 +8,11 @@ public class SeleniumIntro {
         /*ChromeDriver driver = new ChromeDriver();*/
         System.setProperty("webdriver.chrome.driver","/home/mihirpatel/Documents/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://staging.gallantree.com.au/");
+        driver.get("https://www.saucedemo.com/");
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
-        System.out.println(driver.getPageSource());
-        driver.close();
+        //System.out.println(driver.getPageSource());
+        //driver.close();
         //driver.quit();
 
     }
