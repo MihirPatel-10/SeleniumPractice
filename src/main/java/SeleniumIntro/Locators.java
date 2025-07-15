@@ -33,5 +33,19 @@ public class Locators {
         driver.findElement(By.xpath("//form/input[3]")).sendKeys("9958741234");
         driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
         System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+        driver.findElement(By.cssSelector(".go-to-login-btn")).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(By.cssSelector("#inputUsername")).sendKeys("MihirPatel");
+        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("rahulshettyacademy");
+        driver.findElement(By.id("chkboxOne")).click();
+        driver.findElement(By.cssSelector("button.signInBtn")).click();
+        //driver.findElement(By.xpath("//button[contains(@class, 'submit'")).click();
+        /*driver.findElement(By.cssSelector("input#chkboxOne")).click();
+        driver.findElement(By.name("chkboxTwo")).click();
+        driver.findElement(By.xpath("//div[contain(@class,'submit']")).click();*/
     }
 }
