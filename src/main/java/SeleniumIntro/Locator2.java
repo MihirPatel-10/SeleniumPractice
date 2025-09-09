@@ -7,6 +7,8 @@ import org.testng.Assert;
 
 public class Locator2 {
     public static void main(String[] args) {
+
+        System.setProperty("webdriver.gecko.driver", "");
         System.setProperty("webdriver.chrome.driver", "/home/mihirpatel/Documents/chromedriver");
         WebDriver driver = new ChromeDriver();
 
